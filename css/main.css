@@ -6,6 +6,7 @@ html, body, header {
 body {
   position: relative;
   /*For scrollspy*/
+  background-color: rgb(238, 238, 238);
 }
 
 header {
@@ -22,27 +23,79 @@ header {
   padding-top: 25%;
 }
 
-header h4 span {
+header a span {
   margin-top: 10%;
 }
-/*
-nav {
-  background
-}*/
 
-/*.affix {
-  top: 0;
-  width: 100%;
+header .fa {
+  color: rgb(238, 238, 238);
+  border:
 }
 
-.affix + .container {
-    padding-top: 72px;
+/*.container {
+  background-color: rgb(238, 238, 238);
 }*/
 
 section {
-  height: 500px;
+  padding-top: 72px;
+  padding-left: 6em;
+  padding-right: 6em;
+  /*height: 500px;*/
+  /*font-family: 'Hoefler Text', Garamond, Times, serif;*/
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 }
 
+section .section-title {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+section hr {
+  margin-bottom: 4em;
+}
+
+section p, section .section-subtitle {
+  color: rgb(130, 130, 130);
+}
+
+section p {
+  margin-bottom: 2em;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 6em;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+footer {
+  padding: 1em 0 1em 0;
+  background-color: rgb(30, 31, 35);
+  color: rgb(130, 130, 130);
+}
+
+
+
+footer .mysocial {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+footer .fa {
+  color: rgb(238, 238, 238);
+}
+
+footer .mysocial .fa-linkedin-square {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer p span {
+  color: red;
+}
 
 /*
 A Bootstrap 3.1 affix sidebar template
