@@ -14,9 +14,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file://  -->
+  <!-- [if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif] -->
+
 </head>
+<!-- <body data-spy="scroll" data-target="#myNav"> -->
 <body>
-  <header class="title-container text-center">
+  <header class="header-container text-center" id="home">
     <div>
       <h1>Hello! This is Zhuangzhuang(Joey) Xia</h1>
       <h4><em>Front End Web Developer</em></h4>
@@ -26,6 +34,73 @@
     <!-- <h4><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h4>
     <h4><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h4> -->
   </header>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="collapsedNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container main-container">
+
+
+    <!-- <div class="col-md-3">
+      <nav id="myNav"> -->
+        <!-- <ul class="nav" data-spy="affix"> -->
+        <!-- <ul class="nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> -->
+        <!-- <ul class="nav" data-spy="affix" data-offset-top="500">
+          <li><a href="#section1">Section One</a></li>
+          <li><a href="#section2">Section Two</a></li>
+          <li><a href="#section3">Section Three</a></li>
+        </ul>
+      </nav>
+    </div> -->
+
+    <!-- <article class="col-md-9"> -->
+      <section id="about" class="text-center row">
+        <h2>MY STORY</h2>
+        <p>...</p>
+      </section>
+      <section id="skills" class="text-center row">
+        <h2>MY SKILLS</h2>
+        <p>...</p>
+      </section>
+      <section id="education" class="text-center row">
+        <h2>EDUCATION</h2>
+        <p>...</p>
+      </section>
+      <section id="contact" class="text-center row">
+        <h2>SAY HELLO</h2>
+        <p>...</p>
+      </section>
+      <section id="resume" class="text-center row">
+        <h2>MY RESUME</h2>
+        <p>...</p>
+      </section>
+    <!-- </article> -->
+  </div>
 
   <!-- <script src="js/jquery-3.1.0.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

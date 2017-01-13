@@ -1,3 +1,43 @@
+html, body, header {
+  height: 100%;
+}
+
+header {
+  background-image:url('../img/backgroundIMG-1.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.active {
+  font-weight: bold;
+}
+
+header {
+  padding-top: 25%;
+}
+
+header h4 span {
+  margin-top: 10%;
+}
+/*
+nav {
+  background
+}*/
+
+/*.affix {
+  top: 0;
+  width: 100%;
+}
+
+.affix + .container {
+    padding-top: 72px;
+}*/
+
+section {
+  height: 500px;
+}
+
+
 /*
 A Bootstrap 3.1 affix sidebar template
 from http://bootply.com
@@ -9,34 +49,7 @@ license: MIT
 author: bootply.com
 */
 
-html, body, header {
-  height: 100%;
-}
-
-/*body {
- padding-top:50px;
-}*/
-
-body {
-  background-image:url('../img/backgroundIMG-1.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-}
-
-header {
-  /*color: white;*/
-  margin-top: 20%;
-}
-
-header h4 span {
-  margin-top: 10%;
-}
-
-/*header div {
-  margin-top: 50%;
-}*/
-
-#masthead {
+/*#masthead {
  min-height:250px;
 }
 
@@ -82,4 +95,4 @@ header h4 span {
 #sidebar li.active {
   border:0 #eee solid;
   border-right-width:5px;
-}
+}*/
