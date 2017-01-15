@@ -153,10 +153,17 @@ hr {
 }
 
 .education-row .bookitem-section .bookitem-section-bg .bookdescription-section {
-  margin-top: auto;
+  /*margin-top: auto;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
   padding: 1em;
-  /*background-color: rgb(30, 31, 35);*/
 }
+
+/*.education-row .bookitem-section .bookitem-section-bg .bookdescription-section p:last-of-type {
+  margin-top: auto;
+}*/
 
 .education-row .bookitem-section .bookitem-section-bg .bookdescription-section p {
   margin-bottom: 0;
