@@ -1,0 +1,217 @@
+html, body, header {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  /*For scrollspy*/
+  background-color: $tertiary-gray;
+}
+
+header {
+  background-image:url('../img/backgroundIMG-1.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.active {
+  font-weight: bold;
+}
+
+header {
+  padding-top: 25%;
+}
+
+header a span {
+  margin-top: 10%;
+}
+
+header .fa {
+  color: $tertiary-gray;
+}
+
+section {
+  padding-top: $navbar-height;
+  padding-left: $section-padding;
+  padding-right: $section-padding;
+  font-family: $body-font;
+}
+
+section .section-title, section .edu-title, .project-title {
+  font-family: $headline-font;
+}
+
+section hr {
+  margin-bottom: $primary-gap;
+}
+
+section p, section .section-subtitle {
+  color: $base-gray;
+}
+
+section p {
+  margin-bottom: $secondary-gap;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 6em;
+    /* Set the hr color */
+    color: $primary-dark; /* old IE */
+    background-color: $primary-dark; /* Modern Browsers */
+}
+
+.progress {
+  position: relative;
+}
+
+.progress span {
+  position: absolute;
+  left: $tertiary-gap;
+  font-family: $headline-font;
+}
+
+.education .education-row {
+  @include display(flex);
+  @include flex-wrap(wrap);
+}
+
+.education .education-row .education-section {
+  @include flex(1 1 465px);
+}
+
+.education .education-row .education-section {
+  @include display(flex);
+  margin-bottom: $tertiary-gap;
+}
+
+.education .education-row .education-section .text-section {
+  @include flex(1 1 165px);
+  color: $secondary-gray;
+  background-color: $base-dark;
+  padding: $tertiary-gap;
+  @include left-side-rounded($primary-radius);
+  // border-radius: $left-side-rounded;
+}
+
+.education .education-row .education-section figure {
+  @include flex(1);
+}
+
+.education .education-row .education-section .left-text-section {
+  @include left-side-rounded($primary-radius);
+  // border-radius: $left-side-rounded;
+}
+
+.education .education-row .education-section .left-img-section {
+  @include left-side-rounded($primary-radius);
+  // border-radius: $left-side-rounded;
+}
+
+.education .education-row .education-section .right-text-section {
+  @include right-side-rounded($primary-radius);
+  // border-radius: $right-side-rounded;
+}
+
+.education .education-row .education-section .right-img-section {
+  @include right-side-rounded($primary-radius);
+  // border-radius: $right-side-rounded;
+}
+
+.education .education-row .education-section figure {
+  background-color: $base-light;
+  padding: $tertiary-gap;
+}
+
+.education .education-row .education-section figure img {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.education .time-duration {
+  color: $primary-gray;
+  font-weight: bold;
+}
+
+.education-row .bookitem-section {
+  @include display(flex);
+  margin-bottom: $tertiary-gap;
+}
+
+.education-row .bookitem-section figure img {
+  @include top-side-rounded($primary-radius);
+  // border-radius: $top-side-rounded;
+}
+
+.education-row .bookitem-section .bookitem-section-bg {
+  @include display(flex);
+  @include flex-direction(column);
+  background-color: $base-dark;
+  border-radius: $primary-radius;
+}
+
+.education-row .bookitem-section .bookitem-section-bg .bookdescription-section {
+  /*margin-top: auto;*/
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include flex(1);
+  padding: $tertiary-gap;
+}
+
+/*.education-row .bookitem-section .bookitem-section-bg .bookdescription-section p:last-of-type {
+  margin-top: auto;
+}*/
+
+.education-row .bookitem-section .bookitem-section-bg .bookdescription-section p {
+  margin-bottom: 0;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+/*.col-lg-2 {
+  font-size: 6px;
+}*/
+
+/*.education-row div:nth-of-type(1n+2) {
+  margin-left: 1em;
+}*/
+
+section:last-of-type {
+  height: 500px;
+  margin-bottom: 20%;
+}
+
+
+footer {
+  padding: $tertiary-gap 0 $tertiary-gap 0;
+  background-color: $base-dark;
+  color: $base-gray;
+}
+
+footer .mysocial-container {
+  @include display(flex);
+  @include flex-wrap(wrap);
+}
+
+footer .mysocial-container div {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include flex(1);
+  padding: $tertiary-gap;
+}
+
+footer .mysocial-container div img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: $tertiary-gap;
+}
+
+footer .fa {
+  color: $tertiary-gray;
+}

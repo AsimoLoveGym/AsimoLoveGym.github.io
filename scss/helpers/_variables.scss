@@ -1,0 +1,115 @@
+
+// Corporate color palette
+
+$base-dark: rgb(30, 31, 35);
+$primary-dark: #333;
+// $secondary-dark: #06888A;
+// $tertiary-dark: rgb(130, 130, 130);
+
+$base-light: white;
+$primary-light: #FFEED5;
+// $secondary-light:
+// $tertiary-light:
+
+$base-mid: #DC664A;
+// $primary-mid:
+// $secondary-mid:
+// $tertiary-mid:
+
+$base-gray: rgb(130, 130, 130);
+$primary-gray: rgb(180, 180, 180);
+$secondary-gray: rgb(200, 200, 200);
+$tertiary-gray: rgb(238, 238, 238);
+
+// functional variables
+
+$primary-font: 'Hoefler Text', Garamond, Times, serif;;
+$secondary-font: Georgia, "Times New Roman", Times, serif;
+$headline-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$body-font: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+
+// size variables
+
+$primary-border: 10px;
+$navbar-height: 72px;
+
+$primary-margin: 4em;
+$secondary-margin: 2em;
+$tertiary-margin: 1em;
+
+$section-padding: 6em;
+
+$primary-gap: 4em;
+$secondary-gap: 2em;
+$tertiary-gap: 1em;
+
+// Mixins
+$primary-radius: 10px;
+// $left-side-rounded: $primary-radius 0 0 $primary-radius;
+// $right-side-rounded: 0 $primary-radius $primary-radius 0;
+// $top-side-rounded: $primary-radius $primary-radius 0 0;
+// $bottom-side-rounded: 0 0 $primary-radius $primary-radius;
+
+@mixin left-side-rounded($px) {
+  border-radius: $px 0 0 $px;
+}
+
+@mixin right-side-rounded($px) {
+  border-radius: 0 $px $px 0;
+}
+
+@mixin top-side-rounded($px) {
+  border-radius: $px $px 0 0;
+}
+
+@mixin bottom-side-rounded($px) {
+  border-radius: 0 0 $px $px;
+}
+
+// Mixins for media queries
+$screen-xs: 480px;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+
+@mixin mq-xs-up {
+  @media (min-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin mq-xs {
+  @media (min-width: $screen-xs) and (max-width: $screen-small - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-small-up {
+  @media (min-width: $screen-small) {
+    @content;
+  }
+}
+
+@mixin mq-small {
+  @media (min-width: $screen-small) and (max-width: $screen-medium - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-medium {
+  @media (min-width: $screen-medium) and (max-width: $screen-large - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-medium-up {
+  @media (min-width: $screen-medium) {
+    @content;
+  }
+}
+
+@mixin mq-large-up {
+  @media (min-width: $screen-large) {
+    @content;
+  }
+}
