@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-joeyxia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsimoLoveGym/Portfolio-JoeyXia.git"
+  },
+  "author": "Joey Xia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsimoLoveGym/Portfolio-JoeyXia/issues"
+  },
+  "homepage": "https://github.com/AsimoLoveGym/Portfolio-JoeyXia#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-image": "^2.7.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-responsive": "^2.7.0"
+  }
+}
