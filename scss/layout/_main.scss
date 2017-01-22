@@ -13,7 +13,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @include hyphens(auto);
+  // @include hyphens(auto);
+  hyphens: auto;
 }
 
 h1 {
@@ -116,8 +117,10 @@ hr {
 }
 
 .education .education-row {
-  @include display(flex);
-  @include flex-wrap(wrap);
+  // @include display(flex);
+  display: flex;
+  // @include flex-wrap(wrap);
+  flex-wrap: wrap;
   @include mq-xs-down {
     padding-left: 5px;
     padding-right: 5px;
@@ -125,9 +128,11 @@ hr {
 }
 
 .education .education-row .education-section {
-  @include flex(1 1 465px);
+  // @include flex(1 1 465px);
+  flex: 1 1 465px;
   @include mq-xs-down {
-    @include flex(1 1 auto);
+    // @include flex(1 1 auto);
+    flex: 1 1 auto;
   }
   @include mq-xs-down {
     padding-left: 5px;
@@ -136,17 +141,21 @@ hr {
 }
 
 .education .education-row .education-section {
-  @include display(flex);
+  // @include display(flex);
+  display: flex;
   margin-bottom: $tertiary-gap;
 }
 
 .education .education-row .education-section .text-section {
-  @include flex(1 1 165px);
+  // @include flex(1 1 165px);
+  flex: 1 1 165px;
   @include mq-xs-down {
-    @include flex(1 1 130px);
+    // @include flex(1 1 130px);
+    flex: 1 1 130px;
   }
   @include mq-xxs-down {
-    @include flex(1 1 100px);
+    // @include flex(1 1 100px);
+    flex: 1 1 100px;
   }
   color: $secondary-gray;
   background-color: $base-dark;
@@ -156,7 +165,8 @@ hr {
 }
 
 .education .education-row .education-section figure {
-  @include flex(1);
+  // @include flex(1);
+  flex: 1;
 }
 
 .education .education-row .education-section .left-text-section {
@@ -204,7 +214,8 @@ hr {
 }
 
 .education-row .bookitem-section {
-  @include display(flex);
+  // @include display(flex);
+  display: flex;
   margin-bottom: $tertiary-gap;
   @include mq-xs-down {
     padding-left: 5px;
@@ -218,18 +229,24 @@ hr {
 }
 
 .education-row .bookitem-section .bookitem-section-bg {
-  @include display(flex);
-  @include flex-direction(column);
+  // @include display(flex);
+  display: flex;
+  // @include flex-direction(column);
+  flex-direction: column;
   background-color: $base-dark;
   border-radius: $primary-radius;
 }
 
 .education-row .bookitem-section .bookitem-section-bg .bookdescription-section {
   /*margin-top: auto;*/
-  @include display(flex);
-  @include flex-direction(column);
-  @include justify-content(space-between);
-  @include flex(1);
+  // @include display(flex);
+  display: flex;
+  // @include flex-direction(column);
+  flex-direction: column;
+  // @include justify-content(space-between);
+  justify-content: space-between;
+  // @include flex(1);
+  flex: 1;
   padding: $tertiary-gap;
 }
 
@@ -266,15 +283,21 @@ footer {
 }
 
 footer .mysocial-container {
-  @include display(flex);
-  @include flex-wrap(wrap);
+  // @include display(flex);
+  display: flex;
+  // @include flex-wrap(wrap);
+  flex-wrap: wrap;
 }
 
 footer .mysocial-container div {
-  @include display(flex);
-  @include flex-direction(column);
-  @include justify-content(space-between);
-  @include flex(1);
+  // @include display(flex);
+  display: flex;
+  // @include flex-direction(column);
+  flex-direction: column;
+  // @include justify-content(space-between);
+  justify-content: space-between;
+  // @include flex(1);
+  flex: 1;
   padding: $tertiary-gap;
 }
 

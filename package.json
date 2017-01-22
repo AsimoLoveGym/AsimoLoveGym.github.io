@@ -18,6 +18,7 @@
   "homepage": "https://github.com/AsimoLoveGym/Portfolio-JoeyXia#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-image": "^2.7.3",
     "gulp-imagemin": "^3.1.1",
     "gulp-responsive": "^2.7.0",
