@@ -6,6 +6,38 @@ body {
   position: relative;
   /*For scrollspy*/
   background-color: $tertiary-gray;
+
+  @include mq-xxs-down {
+    font-size: 12px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include hyphens(auto);
+}
+
+h1 {
+  @include mq-xs-down {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  @include mq-xs-down {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  @include mq-xs-down {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  @include mq-xs-down {
+    font-size: 16px;
+  }
 }
 
 header {
@@ -20,6 +52,9 @@ header {
 
 header {
   padding-top: 25%;
+  @include mq-xs-down {
+    padding-top: 60%;
+  }
 }
 
 header a span {
@@ -32,9 +67,17 @@ header .fa {
 
 section {
   padding-top: $navbar-height;
-  padding-left: $section-padding;
-  padding-right: $section-padding;
+  padding-left: $base-gap;
+  padding-right: $base-gap;
   font-family: $body-font;
+  @include mq-xs-down {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include mq-xs {
+    padding-left: $secondary-gap;
+    padding-right: $secondary-gap;
+  }
 }
 
 section .section-title, section .edu-title, .project-title {
@@ -75,10 +118,21 @@ hr {
 .education .education-row {
   @include display(flex);
   @include flex-wrap(wrap);
+  @include mq-xs-down {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .education .education-row .education-section {
   @include flex(1 1 465px);
+  @include mq-xs-down {
+    @include flex(1 1 auto);
+  }
+  @include mq-xs-down {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .education .education-row .education-section {
@@ -88,6 +142,12 @@ hr {
 
 .education .education-row .education-section .text-section {
   @include flex(1 1 165px);
+  @include mq-xs-down {
+    @include flex(1 1 130px);
+  }
+  @include mq-xxs-down {
+    @include flex(1 1 100px);
+  }
   color: $secondary-gray;
   background-color: $base-dark;
   padding: $tertiary-gap;
@@ -127,6 +187,14 @@ hr {
 .education .education-row .education-section figure img {
   width: 250px;
   height: 150px;
+  @include mq-xs-down {
+    width: 180px;
+    height: 125px;
+  }
+  @include mq-xxs-down {
+    width: 125px;
+    height: 85px;
+  }
   overflow: hidden;
 }
 
@@ -138,6 +206,10 @@ hr {
 .education-row .bookitem-section {
   @include display(flex);
   margin-bottom: $tertiary-gap;
+  @include mq-xs-down {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .education-row .bookitem-section figure img {

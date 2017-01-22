@@ -37,8 +37,9 @@ $primary-margin: 4em;
 $secondary-margin: 2em;
 $tertiary-margin: 1em;
 
-$section-padding: 6em;
+// $section-padding: 6em;
 
+$base-gap: 6em;
 $primary-gap: 4em;
 $secondary-gap: 2em;
 $tertiary-gap: 1em;
@@ -67,10 +68,23 @@ $primary-radius: 10px;
 }
 
 // Mixins for media queries
+$screen-xxs: 330px;
 $screen-xs: 480px;
 $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
+
+@mixin mq-xxs-down {
+  @media (max-width: $screen-xxs - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-xs-down {
+  @media (max-width: $screen-xs - 1px) {
+    @content;
+  }
+}
 
 @mixin mq-xs-up {
   @media (min-width: $screen-xs) {

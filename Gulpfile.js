@@ -1,3 +1,39 @@
+'use strict';
+
+var gulp = require('gulp');
+var responsive = require('gulp-responsive');
+var sass = require('gulp-sass');
+
+gulp.task('sass', function () {
+  return gulp.src('./scss/**/**/*.scss')
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./scss/**/**/*.scss', ['sass']);
+});
+
+// var $ = require('gulp-load-plugins')();
+
+gulp.task('images', function () {
+  return gulp.src('img/*.{jpcg,png}')
+    .pipe(responsive({
+      '*.jpg': { width: 1200 },
+      '*.png': { width: '50%' },
+      '*': {
+        width: 100,
+        rename: { suffix: '-thumbnail' },
+      },
+    }, {
+      quality: 70,
+      progressive: true,
+      compressionLevel: 6,
+      withMetadata: false,
+    }))
+    .pipe(gulp.dest('dist/responsiveImg'));
+});
+
 // var gulp = require('gulp');
 //
 // gulp.task('test', function () {
@@ -23,26 +59,3 @@
 // });
 
 // gulp.task('default', ['image']);
-
-var gulp = require('gulp');
-
-var responsive = require('gulp-responsive');
-// var $ = require('gulp-load-plugins')();
-
-gulp.task('images', function () {
-  return gulp.src('img/*.{jpg,png}')
-    .pipe(responsive({
-      '*.jpg': { width: 1200 },
-      '*.png': { width: '50%' },
-      '*': {
-        width: 100,
-        rename: { suffix: '-thumbnail' },
-      },
-    }, {
-      quality: 70,
-      progressive: true,
-      compressionLevel: 6,
-      withMetadata: false,
-    }))
-    .pipe(gulp.dest('dist/responsiveImg'));
-});
