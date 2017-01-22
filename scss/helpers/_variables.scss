@@ -74,14 +74,26 @@ $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
 
-@mixin mq-xxs-down {
-  @media (max-width: $screen-xxs - 1px) {
+@mixin mq-xs-down {
+  @media (max-width: $screen-xs - 1px) {
     @content;
   }
 }
 
-@mixin mq-xs-down {
-  @media (max-width: $screen-xs - 1px) {
+@mixin mq-small-down {
+  @media (max-width: $screen-small - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-medium-down {
+  @media (max-width: $screen-medium - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-large-down {
+  @media (max-width: $screen-large - 1px) {
     @content;
   }
 }
@@ -92,26 +104,8 @@ $screen-large: 1200px;
   }
 }
 
-@mixin mq-xs {
-  @media (min-width: $screen-xs) and (max-width: $screen-small - 1px) {
-    @content;
-  }
-}
-
 @mixin mq-small-up {
   @media (min-width: $screen-small) {
-    @content;
-  }
-}
-
-@mixin mq-small {
-  @media (min-width: $screen-small) and (max-width: $screen-medium - 1px) {
-    @content;
-  }
-}
-
-@mixin mq-medium {
-  @media (min-width: $screen-medium) and (max-width: $screen-large - 1px) {
     @content;
   }
 }
@@ -122,8 +116,74 @@ $screen-large: 1200px;
   }
 }
 
+@mixin mq-xxs-down {
+  @media (max-width: $screen-xxs - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-xxs-down-retina {
+  @media (max-width: $screen-xxs - 1px) and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin mq-xxs {
+  @media (min-width: $screen-xxs) and (max-width: $screen-xs - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-xxs-retina {
+  @media (min-width: $screen-xxs) and (max-width: $screen-xs - 1px) and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin mq-xs {
+  @media (min-width: $screen-xs) and (max-width: $screen-small - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-xs-retina {
+  @media (min-width: $screen-xs) and (max-width: $screen-small - 1px) and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin mq-small {
+  @media (min-width: $screen-small) and (max-width: $screen-medium - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-small-retina {
+  @media (min-width: $screen-small) and (max-width: $screen-medium - 1px) and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin mq-medium {
+  @media (min-width: $screen-medium) and (max-width: $screen-large - 1px)  {
+    @content;
+  }
+}
+
+@mixin mq-medium-retina {
+  @media (min-width: $screen-medium) and (max-width: $screen-large - 1px) and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
 @mixin mq-large-up {
   @media (min-width: $screen-large) {
+    @content;
+  }
+}
+
+@mixin mq-large-up-retina {
+  @media (min-width: $screen-large) and (min-resolution: 1.5dppx) {
     @content;
   }
 }
