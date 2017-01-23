@@ -35,11 +35,33 @@
 // });
 
 $(document).ready(function () {
-  $('#booklist').click(function () {
-    console.log($(this).html());
-    $(this).text($(this).text() == 'View Booklist' ? 'Hide Booklist' : 'View Booklist');
+    // $('.scroll-show').each(function (i) {
+    //   $(this).css('opacity', '0');
+    // });
+    //
+    // /* Every time the window is scrolled ... */
+    // $(window).scroll(function () {
+    //     /* Check the location of each desired element */
+    //     $('.scroll-show').each(function (i) {
+    //
+    //       // var bottomOfObject = $(this).offset().top + $(this).outerHeight();
+    //       var bottomOfObject = $(this).offset().top + $(this).outerHeight() / 3;
+    //       var bottomOfWindow = $(window).scrollTop() + $(window).height();
+    //
+    //       /* If the object is completely visible in the window, fade it it */
+    //       if (bottomOfWindow > bottomOfObject) {
+    //         $(this).animate({ 'opacity': '1' }, 800);
+    //       }
+    //     });
+    //   });
+
+    $('#booklist').click(function () {
+      $('#collapseBooklist').slideToggle(1500);
+
+      // console.log($(this).html());
+      $(this).text($(this).text() == 'View My Booklist' ? 'Hide My Booklist' : 'View My Booklist');
+    });
   });
-});
 
 // Add smooth scrolling on all links inside the navbar
 $('#navbar a, #firstpageintro, #backtotop, #checkmywork').on('click', function (event) {
