@@ -76,6 +76,14 @@ header {
     header {
       background-image: url("../dist/responsiveImg/Background/backgroundIMG-1-original.jpg"); } }
 
+.faded {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s; }
+
+.scroll-show {
+  opacity: 1; }
+
 .active {
   font-weight: bold; }
 
