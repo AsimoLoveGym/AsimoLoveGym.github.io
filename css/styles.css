@@ -76,14 +76,6 @@ header {
     header {
       background-image: url("../dist/responsiveImg/Background/backgroundIMG-1-original.jpg"); } }
 
-.faded {
-  opacity: 0;
-  -webkit-transition: opacity 0.8s;
-  transition: opacity 0.8s; }
-
-.scroll-show {
-  opacity: 1; }
-
 .active {
   font-weight: bold; }
 
@@ -98,6 +90,29 @@ header a span {
 
 header .fa {
   color: #eeeeee; }
+
+.filter li:hover, .filter li.active {
+  background: #1e1f23;
+  color: #c8c8c8; }
+
+.filter li {
+  background: #c8c8c8;
+  display: inline-block;
+  font: 400 13px/1.2 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 6px 20px;
+  margin: 5px;
+  color: #1e1f23;
+  cursor: pointer;
+  border-radius: 3px; }
+
+.filter {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding: 0; }
 
 section {
   padding-top: 72px;
@@ -303,7 +318,7 @@ footer .mysocial-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-footer .mysocial-container div {
+footer .mysocial-container div dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

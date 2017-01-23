@@ -1,21 +1,24 @@
 $(document).ready(function () {
-    // $('.scroll-show').each(function (i) {
-    //   $(this).css('opacity', '0');
-    // });
+    $('.faded').each(function (i) {
+      $(this).css('opacity', '0');
+    });
+
     //
     /* Every time the window is scrolled ... */
     $(window).scroll(function () {
+        var windowHeight = $(window).height();
         /* Check the location of each desired element */
         $('.faded').each(function (i) {
 
           // var bottomOfObject = $(this).offset().top + $(this).outerHeight();
-          var bottomOfObject = $(this).offset().top + $(this).outerHeight() / 2;
-          var bottomOfWindow = $(window).scrollTop() + $(window).height();
+          var bottomOfObject = $(this).offset().top + windowHeight / 3;
+          var bottomOfWindow = $(window).scrollTop() + windowHeight;
 
           /* If the object is completely visible in the window, fade it it */
           if (bottomOfWindow > bottomOfObject) {
-            // $(this).animate({ 'opacity': '1' }, 800);
-            $(this).addClass('scroll-show');
+            $(this).animate({ 'opacity': '1' }, 800);
+
+            // $(this).addClass('scroll-show');
           }
         });
       });

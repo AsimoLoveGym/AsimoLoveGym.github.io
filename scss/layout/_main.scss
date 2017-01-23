@@ -91,14 +91,14 @@ header {
   background-size:cover;
 }
 
-.faded {
-  opacity: 0;
-  transition: opacity 0.8s;
-}
-
-.scroll-show {
-  opacity: 1;
-}
+// .faded {
+//   opacity: 0;
+//   transition: opacity 0.8s;
+// }
+//
+// .scroll-show {
+//   opacity: 1;
+// }
 
 .active {
   font-weight: bold;
@@ -117,6 +117,32 @@ header a span {
 
 header .fa {
   color: $tertiary-gray;
+}
+
+.filter li:hover, .filter li.active {
+    background: $base-dark;
+    color: $secondary-gray;
+}
+
+.filter li {
+    background: $secondary-gray;
+    display: inline-block;
+    font: 400 13px/1.2 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 6px 20px;
+    margin: 5px;
+    color: $base-dark;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.filter {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 0 40px 0;
+    padding: 0;
 }
 
 section {
@@ -342,7 +368,7 @@ footer .mysocial-container {
   flex-wrap: wrap;
 }
 
-footer .mysocial-container div {
+footer .mysocial-container div dl {
   // @include display(flex);
   display: flex;
   // @include flex-direction(column);
