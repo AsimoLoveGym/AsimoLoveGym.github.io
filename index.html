@@ -59,7 +59,7 @@
       <h4>Yes, I'm available for hire</h4>
     </div>
     <!-- <h4><span class="fa-angle-double-down" aria-hidden="true"></span></h4> -->
-    <a href="#about"><span class="fa fa-angle-double-down fa-2x"></span></a>
+    <a href="#about" id="firstpageintro"><span class="fa fa-angle-double-down fa-2x"></span></a>
     <!-- <h4><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h4>
     <h4><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h4> -->
   </header>
@@ -74,7 +74,7 @@
           <p>Stepped in front end field with Udacity Nanodegree (link), love it more after taking CS498RK - The Art of Web Programming in UIUC. (link) The fast moving industry and power of combining JS, HTML5, and CSS3 make me fascinated. After more than half year of studying in part time, I decided to quit my job in July 2016 and study full time since then.</p>
           <p>In my road to be a web developer,  Computer Science courses offered by UIUC,  best rating books, and personal projects benefit me most. College courses give me big views and trends about current industry, books taught me with knowledge in depth, practice with projects polish my skills and make real things.</p>
           <p>After more than one year experience in this field, I’m ready for a job as a front end web developer.</p>
-          <a class="btn btn-default" href="#portfolio" role="button">Check my work</a>
+          <a class="btn btn-default" id="checkmywork" href="#portfolio" role="button">Check my work</a>
         </div>
       </section>
 
@@ -228,10 +228,6 @@
             </div>
           </div>
 
-
-        </div> <!-- End of education-row div -->
-
-        <div class="col-md-12 education-row">
           <div class="col-md-6 col-sm-8 education-section text-left">
             <div class="col-md-4 text-section left-text-section">
               <p class="time-duration">Aug 2016 - Sep 2016</p>
@@ -266,9 +262,7 @@
               <h5 class="edu-title">Udacity</h5>
             </div>
           </div>
-        </div> <!-- End of education-row div -->
 
-        <div class="col-md-12 education-row">
           <div class="col-md-6 col-sm-8 education-section text-left">
             <div class="col-md-4 text-section left-text-section">
               <p class="time-duration">Aug 2013 - Dec 2014</p>
@@ -300,12 +294,20 @@
             </figure>
             <div class="col-md-4 text-section right-text-section">
               <p class="time-duration">Feb 2016 - Present</p>
-              <h5 class="edu-title">Click to expand</h5>
+              <h5 class="edu-title">Self Taught</h5>
+              <!-- <h5 class="edu-title">Click to expand</h5> -->
+              <!-- <button class="btn btn-primary edu-title" id="booklist" type="button" data-toggle="collapse" data-target="#collapseBooklist" aria-expanded="false" aria-controls="collapse Booklist">View Booklist</button> -->
             </div>
           </div>
+
         </div> <!-- End of education-row div -->
 
-        <div class="col-md-12 education-row">
+        <a class="btn btn-info" id="booklist" role="button" data-toggle="collapse" data-target="#collapseBooklist" aria-expanded="false" aria-controls="collapse Booklist">View Booklist</a>
+
+        <div class="collapse" id="collapseBooklist">
+          <h4 class="section-subtitle"><i>A collection of books I've read</i></h4>
+          <hr>
+          <div class="col-md-12 education-row">
           <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
             <div class="bookitem-section-bg">
               <figure>
@@ -557,7 +559,9 @@
               </div>
             </div>
           </div>
-        </div>
+
+          </div><!-- End of education-row div -->
+        </div><!-- End of collapse booklist -->
 
       </section><!-- End of education section -->
 
@@ -758,7 +762,7 @@
   <footer id="contact">
     <div class="text-center container">
     <!-- <button><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button> -->
-      <a href="#home"><i class="fa fa-angle-double-up fa-2x"></i></a>
+      <a href="#home" id="backtotop"><i class="fa fa-angle-double-up fa-2x"></i></a>
       <div class="row mysocial-container">
         <div class="col-xs-12 col-sm-4 myprofile">
           <img src="dist/responsiveImg/Profile/me-100px@2x.jpg" class="img-circle img-responsive center-block" alt="The Profile of author">
