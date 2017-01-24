@@ -307,8 +307,19 @@
         <div class="collapse" id="collapseBooklist">
           <h4 class="section-subtitle"><i>A collection of books I've read</i></h4>
           <hr>
+
+          <ul class="filter" id="books-filter">
+  						<li class="active" data-group="all">All</li>
+  						<li data-group="javascript" class="">JavaScript</li>
+              <li data-group="css" class="">CSS</li>
+              <li data-group="react" class="">React</li>
+  						<li data-group="backend" class="">Backend</li>
+              <li data-group="favorite" class="">Favorite</li>
+  				</ul>
+
           <div class="col-md-12 education-row">
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- HTML5: The Missing Manual -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all favorite">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture class="img-responsive">
@@ -324,7 +335,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+
+          <!-- CSS: The Missing Manual -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all css favorite">
             <div class="bookitem-section-bg">
               <figure class="img-responsive">
                 <!-- <picture>
@@ -340,7 +353,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+
+          <!-- JavaScript & jQuery: The Missing Manual -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all javascript favorite">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture class="img-responsive">
@@ -356,7 +371,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+
+          <!-- Professional JavaScript for Web Developers -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all javascript favorite">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -373,7 +390,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- CSS Secrets -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all css">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -390,7 +408,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- Bootstrap -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all css">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -407,7 +426,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- The Principles of Object-Oriented JavaScript -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all javascript favorite">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -424,7 +444,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- Understanding ECMAScript 6 -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all javascript favorite">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -441,7 +462,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- React: Up & Running -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all react">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -458,7 +480,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- Learning React: Functional Web Development with React and Flux -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all react">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -475,7 +498,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- Learning React -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all react">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>LearningReact-1
@@ -492,7 +516,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- MEAN Web Development -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all backend">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -509,7 +534,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- Node.js Design Patterns -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all backend">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -526,7 +552,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- Web Development with Node and Express -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all backend">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -543,7 +570,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left">
+          <!-- WordPress: The Missing Manual -->
+          <div class="col-lg-3 col-md-4 col-xs-6 bookitem-section text-left book-item" data-groups="all">
             <div class="bookitem-section-bg">
               <figure>
                 <!-- <picture>
@@ -570,17 +598,19 @@
         <h4 class="section-subtitle"><i>A collection of projects I've done</i></h4>
         <hr>
 
-        <ul class="filter">
+        <ul class="filter" id="portfolio-filter">
 						<li class="active" data-group="all">All</li>
-						<li data-group="slideshow" class="">Slideshow</li>
-						<li data-group="video" class="">Video</li>
-						<li data-group="image" class="">Image</li>
+						<li data-group="frontend" class="">Frontend</li>
+            <li data-group="react" class="">React</li>
+						<li data-group="backend" class="">Backend</li>
+						<li data-group="featured" class="">Featured</li>
 				</ul>
 
         <div class="col-md-12 education-row">
 
           <!-- Recipe Box -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend react backend featured">
+          <!-- <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="frontend">   -->
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/recipebox-300px.jpeg" class="img-responsive" alt="Recipe Box App">
@@ -595,7 +625,7 @@
           </div>
 
           <!-- Simon Game -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend featured">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/simongame-300px.jpeg" class="img-responsive" alt="Simon Game">
@@ -610,7 +640,7 @@
           </div>
 
           <!-- Neighborhood Map -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend featured">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/map-api-300px.jpeg" class="img-responsive" alt="Neighborhood Map App">
@@ -625,7 +655,7 @@
           </div>
 
           <!-- Arcade Game -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/arcade-game-300px.jpeg" class="img-responsive" alt="Arcade Game Clone">
@@ -640,7 +670,7 @@
           </div>
 
           <!-- Web Optimization -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/web-optimization-300px.jpeg" class="img-responsive" alt="Web Optimization">
@@ -654,7 +684,7 @@
           </div>
 
           <!-- js calculator -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/jscalculator-300px.jpeg" class="img-responsive" alt="Javascript Calculator">
@@ -669,7 +699,7 @@
           </div>
 
           <!-- pomodoro clock -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/pomodoro-300px.jpeg" class="img-responsive" alt="Pomodoro Clock">
@@ -684,7 +714,7 @@
           </div>
 
           <!-- twitchTV -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/twitchTV-300px.jpeg" class="img-responsive" alt="TwitchTV Viewer">
@@ -699,7 +729,7 @@
           </div>
 
           <!-- tic tac toe game -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/tictactoe-300px.jpeg" class="img-responsive" alt="Tic Tac Toe Game">
@@ -714,7 +744,7 @@
           </div>
 
           <!-- fcc leaderboard -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/fccleaderboard-300px.jpeg" class="img-responsive" alt="Free Code Camp Leaderboard">
@@ -729,7 +759,7 @@
           </div>
 
           <!-- markdown preview -->
-          <div class="col-md-4 col-xs-6 bookitem-section text-left">
+          <div class="col-md-4 col-xs-6 bookitem-section text-left portfolio-item" data-groups="all frontend react">
             <div class="bookitem-section-bg">
               <figure>
                 <img src="dist/responsiveImg/Projects/markdownpreview-300px.jpeg" class="img-responsive" alt="Markdown Preview">
