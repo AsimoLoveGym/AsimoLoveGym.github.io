@@ -91,7 +91,7 @@ header a span {
 header .fa {
   color: #eeeeee; }
 
-.filter li:hover, .filter li.active, .filter li:focus {
+.filter li:hover, .filter li.active {
   background: #1e1f23;
   color: #c8c8c8; }
 
@@ -126,7 +126,7 @@ section {
       padding-left: 2em;
       padding-right: 2em; } }
 
-section .section-title, section .edu-title, .project-title {
+section .section-title, section .edu-title, .project-title, .modal-title {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 section hr {
@@ -166,6 +166,9 @@ hr {
     .education .education-row {
       padding-left: 5px;
       padding-right: 5px; } }
+
+.education .modal-section {
+  cursor: pointer; }
 
 .education .education-row .education-section {
   -webkit-box-flex: 1;

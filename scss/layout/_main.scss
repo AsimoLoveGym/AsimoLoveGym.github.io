@@ -119,7 +119,7 @@ header .fa {
   color: $tertiary-gray;
 }
 
-.filter li:hover, .filter li.active, .filter li:focus {
+.filter li:hover, .filter li.active {
     background: $base-dark;
     color: $secondary-gray;
 }
@@ -158,7 +158,7 @@ section {
   }
 }
 
-section .section-title, section .edu-title, .project-title {
+section .section-title, section .edu-title, .project-title, .modal-title {
   font-family: $headline-font;
 }
 
@@ -202,6 +202,10 @@ hr {
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+.education .modal-section {
+  cursor: pointer;
 }
 
 .education .education-row .education-section {

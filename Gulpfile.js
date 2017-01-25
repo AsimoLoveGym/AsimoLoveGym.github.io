@@ -90,6 +90,12 @@ gulp.task('images-edu', function () {
         width: 250 * 2,
         rename: { suffix: '-250px@2x' },
       }, {
+        width: 480,
+        rename: { suffix: '-480px' },
+      }, {
+        width: 760,
+        rename: { suffix: '-760px' },
+      }, {
         // Compress, strip metadata, and rename original image
         rename: { suffix: '-original' },
       }],
