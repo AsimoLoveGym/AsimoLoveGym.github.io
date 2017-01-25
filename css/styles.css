@@ -104,7 +104,7 @@ header .fa {
   margin: 5px;
   color: #1e1f23;
   cursor: pointer;
-  border-radius: 3px; }
+  border-radius: 30px; }
 
 .filter {
   list-style-type: none;
@@ -319,7 +319,7 @@ footer .mysocial-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-footer .mysocial-container div dl {
+footer .mysocial-container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

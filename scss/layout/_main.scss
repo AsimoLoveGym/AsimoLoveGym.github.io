@@ -133,7 +133,7 @@ header .fa {
     margin: 5px;
     color: $base-dark;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 30px;
 }
 
 .filter {
@@ -370,7 +370,7 @@ footer .mysocial-container {
   flex-wrap: wrap;
 }
 
-footer .mysocial-container div dl {
+footer .mysocial-container div {
   // @include display(flex);
   display: flex;
   // @include flex-direction(column);

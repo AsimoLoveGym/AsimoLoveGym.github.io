@@ -44,5 +44,14 @@ Brown, Ethan
 WordPress: The Missing Manual
 MacDonald, Matthew
 
+Front-End Tooling with Gulp, Bower, and Yeoman
+Stefan Baumgartner
+
+Mastering Responsive Web Design
+Ricardo Zea
+
+The Way of the Web Tester: A Beginner's Guide to Automating Tests
+Jonathan Rasmusson
+
 
 
