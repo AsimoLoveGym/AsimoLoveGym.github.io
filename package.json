@@ -1,8 +1,22 @@
 {
   "name": "portfolio-joeyxia",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is a **Bootstrap & Sass & Responsive Design** project for my personal portfolio website. Also apply **Gulp** for tasks.",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-image": "^2.7.3",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-responsive": "^2.7.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "pump": "^1.0.2",
+    "sharp": "^0.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,17 +29,5 @@
   "bugs": {
     "url": "https://github.com/AsimoLoveGym/Portfolio-JoeyXia/issues"
   },
-  "homepage": "https://github.com/AsimoLoveGym/Portfolio-JoeyXia#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-image": "^2.7.3",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-responsive": "^2.7.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.0.1",
-    "pump": "^1.0.2"
-  }
+  "homepage": "https://github.com/AsimoLoveGym/Portfolio-JoeyXia#readme"
 }
