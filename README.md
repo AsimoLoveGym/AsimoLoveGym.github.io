@@ -1,8 +1,8 @@
 # Portfolio-JoeyXia
 
-This is a **Bootstrap & Sass & Responsive Design** project for my personal portfolio website. Also apply **Gulp** for tasks. 
+Provided detailed information about my personal story, projects, and some of the books and materials I studied. Facilitated responsive layout, design, and images with **Bootstrap, Sass and Gulp**. Smooth visiting experience from mobile devices to tablets and desktop.
 
-You can [view the site here](https://asimolovegym.github.io/Portfolio-JoeyXia/)
+You can [view the site here](https://asimolovegym.github.io/)
 
 Created & designed by myself. But also inspired by people listed in the reference.
 
